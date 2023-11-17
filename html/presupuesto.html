@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./multimedia/logo/logo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="../multimedia/logo/logo.jpeg" type="image/x-icon">
     <title>Elite</title>
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -45,7 +45,8 @@
                             <a class="nav-link " href="./galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link active" aria-current="page" href="presupuesto.html">Presupuesto</a>
+                            <a class="nav-link nav-link active" aria-current="page"
+                                href="presupuesto.html">Presupuesto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./contacto.html">Trabaja con
@@ -56,91 +57,154 @@
             </div>
         </nav>
     </header>
-    <!-- principal -->
-    <main>
-        <h1>prueba</h1>
 
+    <main class="container-fluid text-center d-flex align-items-center justify-content-center mt-4">
+        <div class="row justify-content-center">
+            <div>
+                <form>
+                    <!-- Tipo de evento -->
+                    <div class="mb-3">
+                        <label for="tipoEvento" class="form-label">Tipo de evento:</label>
+                        <select class="form-select" id="tipoEvento" required>
+                            <option value="">Seleccionar</option>
+                            <option value="casamiento">Casamiento</option>
+                            <option value="cumpleanos">Cumpleaños</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+        
+                    <!-- Locacion -->
+                    <div class="mb-3">
+                        <label for="locacion" class="form-label">Locación:</label>
+                        <select class="form-select" id="locacion" required>
+                            <option value="">Seleccionar</option>
+                            <option value="rawson">Rawson</option>
+                            <option value="capital">Capital</option>
+                            <option value="rivadavia">Rivadavia</option>
+                            <option value="pocito">Pocito</option>
+                            <!-- Agrega más opciones según sea necesario -->
+                        </select>
+                    </div>
+        
+                    <!-- Cantidad de invitados -->
+                    <div class="mb-3">
+                        <label for="cantidadInvitados" class="form-label">Cantidad de invitados:</label>
+                        <input type="number" class="form-control" id="cantidadInvitados" required>
+                    </div>
+        
+                    <!-- Duracion del evento -->
+                    <div class="mb-3">
+                        <label for="duracionEvento" class="form-label">Duración del evento (Horas):</label>
+                        <input type="number" class="form-control" id="duracionEvento" required>
+                    </div>
+        
+                    <!-- Ingresar voucher -->
+                    <div class="mb-3">
+                        <label for="voucher" class="form-label">Ingresar voucher:</label>
+                        <input type="text" class="form-control" id="voucher">
+                    </div>
+        
+                    <!-- Botón de enviar -->
+                    <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                </form>
+            </div>
+        </div>
+        
     </main>
 
     <!-- footer -->
-<footer>
-    <div class="container">
-        <div class="row social-icons">
-            <!-- Sección de Contacto -->
-            <div class="col-md-6">
-                <h4>Contacto</h4>
-                <ul>
-                    <li>
-                        <a href="https://api.whatsapp.com/send?phone=542644853601" target="_blank">
-                            <img src="../multimedia/ico/call.svg" class="redes" alt="Teléfono"> Teléfono: +54 - 2644853601
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:elitecatering@gmail.com" target="_blank">
-                            <img src="../multimedia/ico/email.svg" class="redes" alt="Email"> Email: elitecatering@gmail.com
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://maps.app.goo.gl/w1kHihwY1TNsiRVM9" target="_blank">
-                            <img src="../multimedia/ico/place.svg" class="redes" alt="Ubicación"> Ubicación: Ig. de la Roza 590 (O), Ciudad de San Juan - Rivadavia
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Sección de Redes Sociales -->
-            <div class="col-md-6">
-                <h4>Redes Sociales</h4>
-                <ul class="social-icons">
-                    <li>
-                        <a href="https://www.facebook.com/tupagina" target="_blank">
-                            <img src="../multimedia/ico/facebook.png" class="redes" alt="Facebook"> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/tuinstagram" target="_blank">
-                            <img src="../multimedia/ico/instagram.png" class="redes" alt="Instagram"> Instagram
-                        </a>
-                    </li>
-                </ul>
-                <!-- Formulario de Registro para Novedades -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Regístrate para recibir novedades</h4>
-                        <form id="registro-novedades">
-                            <div class="input-group mb-3">
-                                <label for="emailInput" class="visually-hidden">Tu dirección de correo electrónico</label>
-                                <input type="email" class="form-control borde" required id="emailInput" placeholder="Tu dirección de correo electrónico" aria-label="Tu dirección de correo electrónico" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn borde enviar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                        <img src="../multimedia/ico/avion.png" class="redes " alt="">
-                                    </button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Gracias por registrarte</h1>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    Recibirás todas las novedades sobre nuestras promociones. ¡Gracias!
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    <footer>
+        <div class="container">
+            <div class="row social-icons">
+                <!-- Sección de Contacto -->
+                <div class="col-md-6">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=542644853601" target="_blank">
+                                <img src="../multimedia/ico/call.svg" class="redes" alt="Teléfono"> Teléfono: +54 -
+                                2644853601
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:elitecatering@gmail.com" target="_blank">
+                                <img src="../multimedia/ico/email.svg" class="redes" alt="Email"> Email:
+                                elitecatering@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/w1kHihwY1TNsiRVM9" target="_blank">
+                                <img src="../multimedia/ico/place.svg" class="redes" alt="Ubicación"> Ubicación: Ig. de
+                                la Roza 590 (O), Ciudad de San Juan - Rivadavia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sección de Redes Sociales -->
+                <div class="col-md-6">
+                    <h4>Redes Sociales</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.facebook.com/tupagina" target="_blank">
+                                <img src="../multimedia/ico/facebook.png" class="redes" alt="Facebook"> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/tuinstagram" target="_blank">
+                                <img src="../multimedia/ico/instagram.png" class="redes" alt="Instagram"> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Formulario de Registro para Novedades -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Regístrate para recibir novedades</h4>
+                            <form id="registro-novedades">
+                                <div class="input-group mb-3">
+                                    <label for="emailInput" class="visually-hidden">Tu dirección de correo
+                                        electrónico</label>
+                                    <input type="email" class="form-control borde" required id="emailInput"
+                                        placeholder="Tu dirección de correo electrónico"
+                                        aria-label="Tu dirección de correo electrónico"
+                                        aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn borde enviar" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">
+                                            <img src="../multimedia/ico/avion.png" class="redes " alt="">
+                                        </button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Gracias
+                                                            por registrarte</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Recibirás todas las novedades sobre nuestras promociones.
+                                                        ¡Gracias!
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Cerrar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
