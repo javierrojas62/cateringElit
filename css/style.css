@@ -1,10 +1,51 @@
-/* reset codigo */
+/* reset código */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    /* Ajusta el valor según la altura de tu barra de navegación */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
 /* Estilo para el logo */
 #logo {
     width: 14vh;
+}
+
+header {
+    background-color: #D4D3CC;
+}
+
+/* Estilo para los iconos en el pie de página */
+.redes {
+    height: 15px;
+}
+/* Quitar viñetas de las listas en el pie de página */
+ul {
+    
+    border-radius: 1vh;
+    list-style: none;
+    background-color: #D4D3CC;
+}
+/* Quitar subrayado de los enlaces en el footer */
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    background-color: #D4D3CC;
+}
+.enviar{
+    border: solid 2px;
+}
+footer {
+    background-color: #D4D3CC;
+    padding: 20px;
 }
