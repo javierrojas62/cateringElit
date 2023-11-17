@@ -25,10 +25,32 @@ body {
 header {
     background-color: #D4D3CC;
 }
+.contenedor {
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+}
 
 /* Estilo para los iconos en el pie de página */
 .redes {
     height: 15px;
+}
+/* Efecto de alejamiento para las tarjetas */
+.tarjetas .card:hover .card-img-top {
+    transform: scale(0.9);
+    transition: transform 0.3s;
+ 
+}
+/* Centrar verticalmente el título en las tarjetas y ajustar el estilo del texto */
+.card .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    color: #D4D3CC;
+    
 }
 /* Quitar viñetas de las listas en el pie de página */
 ul {
