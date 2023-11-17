@@ -10,10 +10,11 @@ body {
     /* Ajusta el valor según la altura de tu barra de navegación */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-
+   
+}
+/* Establecer altura máxima para las imágenes del carrusel */
+.img-carru img {
+    max-height: 70vh;
 }
 
 /* Estilo para el logo */
