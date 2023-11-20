@@ -1,47 +1,80 @@
-/* reset código */
+/* reset codigo */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* var colores */
+:root {
+    --principal: #D4D3CC;
+    --secundario: #7B7C74;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-link {
+    font-family: 'Lato', sans-serif;
+}
+
 body {
     margin: 0;
-    /* Ajusta el valor según la altura de tu barra de navegación */
     display: flex;
     flex-direction: column;
-   
 }
-/* Establecer altura máxima para las imágenes del carrusel */
+
+.opacidad-imagen {
+    opacity: 0.6;
+}
+
+.card-title {
+    color: #FFFFFF;
+}
+
+.title-galeria {
+    color: var(--secundario);
+    font-weight: bold;
+}
+
+/*  altura maxima img carrusel */
 .img-carru img {
     max-height: 70vh;
 }
 
-/* Estilo para el logo */
+/* logo */
 #logo {
     width: 14vh;
 }
 
 header {
-    background-color: #D4D3CC;
+    background-color: var(--principal);
 }
+
 .contenedor {
     text-align: center;
     margin-top: 25px;
     padding: 15px;
 }
 
-/* Estilo para los iconos en el pie de página */
+/*  iconos footer */
 .redes {
     height: 15px;
 }
-/* Efecto de alejamiento para las tarjetas */
+
+/* Efecto tarjetas */
 .tarjetas .card:hover .card-img-top {
     transform: scale(0.9);
     transition: transform 0.3s;
- 
 }
-/* Centrar verticalmente el título en las tarjetas y ajustar el estilo del texto */
+
+/*  título en las tarjetas  */
 .card .card-img-overlay {
     display: flex;
     flex-direction: column;
@@ -49,28 +82,35 @@ header {
     text-align: center;
     font-weight: bold;
     font-family: 'Anton', sans-serif;
-    color: #D4D3CC;
-    
+    color: var(--principal);
 }
-/* Quitar viñetas de las listas en el pie de página */
+
+/* sin viñetas de las listas  */
 ul {
-    
+
     border-radius: 1vh;
     list-style: none;
-    background-color: #D4D3CC;
+    background-color: var(--principal);
 }
-/* Quitar subrayado de los enlaces en el footer */
+
+/* sin subrayado de los enlaces  */
 .social-icons a {
     text-decoration: none;
     color: black;
-    background-color: #D4D3CC;
+    background-color: var(--principal);
 }
-.enviar{
+
+.enviar {
     border: solid 2px;
 }
 
+.btn-enviar {
+    background-color: var(--principal);
+}
+
+
 footer {
-    background-color: #D4D3CC;
+    background-color: var(--principal);
     padding: 20px;
- 
+
 }

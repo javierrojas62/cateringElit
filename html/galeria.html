@@ -4,25 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
     <link rel="shortcut icon" href="../multimedia/logo/logo.jpeg" type="image/x-icon">
+    <!-- titulo  -->
     <title>Elite</title>
-    <!-- boostrap -->
+    <!-- estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <!-- scripts -->
+    <script defer src="../js/main.js"></script>
 </head>
 
 <body>
     <header>
-        <!-- Barra de navegación -->
+        <!-- navbar -->
         <div class="navbar navbar-expand-lg">
             <div class="container">
-                <!-- Logo centrado en el medio -->
+                <!-- Logo  -->
                 <a class="navbar-brand mx-auto" href="#">
                     <img src="../multimedia/logo/logo.jpeg" alt="logo" id="logo" class="rounded img-fluid">
                 </a>
 
-                <!-- Botón de hamburguesa -->
+                <!-- manu de hamburguesa -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,7 +38,7 @@
             </div>
         </div>
 
-        <!-- Enlaces centrados debajo del logo -->
+        <!-- enlaces  -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -61,9 +69,10 @@
         <div class="container tarjetas contenedor">
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <a href="#sociales">
+                    <a href="./html/galeria.html">
                         <div class="card text-bg-dark">
-                            <img src="../multimedia/img/index/galeria.jpg" class="card-img-top zoom-effect" alt="...">
+                            <img src="../multimedia/img/index/galeria.jpg"
+                                class="card-img-top zoom-effect opacidad-imagen" alt="...">
                             <div class="card-img-overlay">
                                 <h1 class="card-title">Eventos Sociales</h1>
                             </div>
@@ -71,9 +80,10 @@
                     </a>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <a href="#corporativo">
+                    <a href="./html/presupuesto.html">
                         <div class="card text-bg-dark">
-                            <img src="../multimedia/img/index/presupuesto.jpg" class="card-img-top zoom-effect" alt="...">
+                            <img src="../multimedia/img/index/presupuesto.jpg"
+                                class="card-img-top zoom-effect opacidad-imagen" alt="...">
                             <div class="card-img-overlay">
                                 <h1 class="card-title">Eventos Corporativos</h1>
                             </div>
@@ -83,157 +93,160 @@
             </div>
         </div>
 
-        <!-- principal -->
-<main>
-    <div class="container tarjetas contenedor">
-        <!-- Sección de Eventos Sociales -->
-        <div class="row mb-4">
-            <div class="col-md-12 text-center" id="sociales">
-                <h2>Eventos Sociales</h2>
+        <!-- sociales -->
+        <div class="container tarjetas contenedor">
+            <div class="row mb-4">
+                <div class="col-md-12 text-center" id="sociales">
+                    <h2 class="title-galeria">Eventos Sociales</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <!-- img -->
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/1.jpg" class="img-fluid" alt="Evento 1">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/2.jpg" class="img-fluid" alt="Evento 2">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/3.jpg" class="img-fluid" alt="Evento 3">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/4.jpg" class="img-fluid" alt="Evento 4">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/5.jpg" class="img-fluid" alt="Evento 5">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/6.jpg" class="img-fluid" alt="Evento 6">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12">
-                <div class="row">
-                    <!-- Imágenes de Eventos Sociales -->
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/1.jpg" class="img-fluid" alt="Evento 1">
+
+            <!-- corporativos -->
+            <div class="row mb-4">
+                <div class="col-md-12 text-center" id="corporativo">
+                    <h2 class="title-galeria">Eventos Corporativos</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <!-- corporativos -->
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/7.jpg" class="img-fluid" alt="Evento Corporativo 7">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/8.jpg" class="img-fluid" alt="Evento Corporativo 8">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/9.jpg" class="img-fluid" alt="Evento Corporativo 9">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/10.jpg" class="img-fluid" alt="Evento Corporativo 10">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/11.jpg" class="img-fluid" alt="Evento Corporativo 11">
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <img src="../multimedia/img/galeria/12.jpg" class="img-fluid" alt="Evento Corporativo 12">
+                        </div>
                     </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/2.jpg" class="img-fluid" alt="Evento 2">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/3.jpg" class="img-fluid" alt="Evento 3">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/4.jpg" class="img-fluid" alt="Evento 4">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/5.jpg" class="img-fluid" alt="Evento 5">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/6.jpg" class="img-fluid" alt="Evento 6">
-                    </div>
-                    
                 </div>
             </div>
         </div>
-
-        <!-- Sección de Eventos Corporativos -->
-        <div class="row mb-4">
-            <div class="col-md-12 text-center" id="corporativo">
-                <h2>Eventos Corporativos</h2>
-            </div>
-            <div class="col-md-12">
-                <div class="row">
-                    <!-- Imágenes de Eventos Corporativos -->
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/7.jpg" class="img-fluid" alt="Evento Corporativo 7">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/8.jpg" class="img-fluid" alt="Evento Corporativo 8">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/9.jpg" class="img-fluid" alt="Evento Corporativo 9">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/10.jpg" class="img-fluid" alt="Evento Corporativo 10">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/11.jpg" class="img-fluid" alt="Evento Corporativo 11">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/12.jpg" class="img-fluid" alt="Evento Corporativo 12">
-                    </div>
-                    <div class="col-md-2 mb-3">
-                        <img src="../multimedia/img/galeria/13.jpg" class="img-fluid" alt="Evento Corporativo 13">
-                    </div>
-                    <!-- Repite este bloque para cada imagen -->
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-
     </main>
 
     <!-- footer -->
-<footer>
-    <div class="container">
-        <div class="row social-icons">
-            <!-- Sección de Contacto -->
-            <div class="col-md-6">
-                <h4>Contacto</h4>
-                <ul>
-                    <li>
-                        <a href="https://api.whatsapp.com/send?phone=542644853601" target="_blank">
-                            <img src="../multimedia/ico/call.svg" class="redes" alt="Teléfono"> Teléfono: +54 - 2644853601
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:elitecatering@gmail.com" target="_blank">
-                            <img src="../multimedia/ico/email.svg" class="redes" alt="Email"> Email: elitecatering@gmail.com
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://maps.app.goo.gl/w1kHihwY1TNsiRVM9" target="_blank">
-                            <img src="../multimedia/ico/place.svg" class="redes" alt="Ubicación"> Ubicación: Ig. de la Roza 590 (O), Ciudad de San Juan - Rivadavia
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Sección de Redes Sociales -->
-            <div class="col-md-6">
-                <h4>Redes Sociales</h4>
-                <ul class="social-icons">
-                    <li>
-                        <a href="https://www.facebook.com/tupagina" target="_blank">
-                            <img src="../multimedia/ico/facebook.png" class="redes" alt="Facebook"> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/tuinstagram" target="_blank">
-                            <img src="../multimedia/ico/instagram.png" class="redes" alt="Instagram"> Instagram
-                        </a>
-                    </li>
-                </ul>
-                <!-- Formulario de Registro para Novedades -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Regístrate para recibir novedades</h4>
-                        <form id="registro-novedades">
-                            <div class="input-group mb-3">
-                                <label for="emailInput" class="visually-hidden">Tu dirección de correo electrónico</label>
-                                <input type="email" class="form-control borde" required id="emailInput" placeholder="Tu dirección de correo electrónico" aria-label="Tu dirección de correo electrónico" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn borde enviar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                        <img src="../multimedia/ico/avion.png" class="redes " alt="">
-                                    </button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Gracias por registrarte</h1>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    Recibirás todas las novedades sobre nuestras promociones. ¡Gracias!
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    <footer>
+        <div class="container">
+            <div class="row social-icons">
+                <!-- contacto -->
+                <div class="col-md-6">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=542644853601" target="_blank">
+                                <img src="../multimedia/ico/call.svg" class="redes" alt="Teléfono"> Teléfono: +54 -
+                                2644853601
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:elitecatering@gmail.com" target="_blank">
+                                <img src="../multimedia/ico/email.svg" class="redes" alt="Email"> Email:
+                                elitecatering@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/w1kHihwY1TNsiRVM9" target="_blank">
+                                <img src="../multimedia/ico/place.svg" class="redes" alt="Ubicación"> Ubicación: Ig. de
+                                la Roza 590 (O), Ciudad de San Juan - Rivadavia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- redes -->
+                <div class="col-md-6">
+                    <h4>Redes Sociales</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.facebook.com/tupagina" target="_blank">
+                                <img src="../multimedia/ico/facebook.png" class="redes" alt="Facebook"> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/tuinstagram" target="_blank">
+                                <img src="../multimedia/ico/instagram.png" class="redes" alt="Instagram"> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- formulario -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Regístrate para recibir novedades</h4>
+                            <form id="registro-novedades">
+                                <div class="input-group mb-3">
+                                    <label for="emailInput" class="visually-hidden">Tu dirección de correo
+                                        electrónico</label>
+                                    <input type="email" class="form-control borde" required id="emailInput"
+                                        placeholder="Tu dirección de correo electrónico"
+                                        aria-label="Tu dirección de correo electrónico"
+                                        aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <!-- btn modal -->
+                                        <button type="button" class="btn borde enviar" id="btnEnviar">
+                                            <img src="../multimedia/ico/avion.png" class="redes" alt="">
+                                        </button>
+                                        <!-- modal -->
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Mensaje
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body" id="modalBody">
+                                                        <!-- js -->
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Cerrar</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -246,15 +259,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-    <script>
-        // Manejo del evento de clic para el botón de hamburguesa
-        document.querySelector('.navbar-toggler').addEventListener('click', function () {
-            // Selecciona el elemento que contiene el menú
-            var menu = document.querySelector('#navbarNav');
-            // Alterna la clase 'show' para mostrar u ocultar el menú
-            menu.classList.toggle('show');
-        });
-    </script>
 </body>
 
 </html>

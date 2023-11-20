@@ -4,25 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
     <link rel="shortcut icon" href="../multimedia/logo/logo.jpeg" type="image/x-icon">
+    <!-- titulo  -->
     <title>Elite</title>
-    <!-- boostrap -->
+    <!-- estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <!-- scripts -->
+    <script defer src="../js/main.js"></script>
 </head>
 
 <body>
     <header>
-        <!-- Barra de navegación -->
+        <!-- navbar -->
         <div class="navbar navbar-expand-lg">
             <div class="container">
-                <!-- Logo centrado en el medio -->
+                <!-- logo -->
                 <a class="navbar-brand mx-auto" href="#">
                     <img src="../multimedia/logo/logo.jpeg" alt="logo" id="logo" class="rounded img-fluid">
                 </a>
 
-                <!-- Botón de hamburguesa -->
+                <!-- manu de hamburguesa -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,7 +38,7 @@
             </div>
         </div>
 
-        <!-- Enlaces centrados debajo del logo -->
+        <!-- enlaces  -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -58,65 +66,60 @@
         </nav>
     </header>
 
-    <main class="container-fluid text-center d-flex align-items-center justify-content-center mt-4">
-        <div class="row justify-content-center">
-            <div>
-                <form>
-                    <!-- Tipo de evento -->
-                    <div class="mb-3">
-                        <label for="tipoEvento" class="form-label">Tipo de evento:</label>
-                        <select class="form-select" id="tipoEvento" required>
-                            <option value="">Seleccionar</option>
-                            <option value="casamiento">Casamiento</option>
-                            <option value="cumpleanos">Cumpleaños</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-        
-                    <!-- Locacion -->
-                    <div class="mb-3">
-                        <label for="locacion" class="form-label">Locación:</label>
-                        <select class="form-select" id="locacion" required>
-                            <option value="">Seleccionar</option>
-                            <option value="rawson">Rawson</option>
-                            <option value="capital">Capital</option>
-                            <option value="rivadavia">Rivadavia</option>
-                            <option value="pocito">Pocito</option>
-                            <!-- Agrega más opciones según sea necesario -->
-                        </select>
-                    </div>
-        
-                    <!-- Cantidad de invitados -->
-                    <div class="mb-3">
-                        <label for="cantidadInvitados" class="form-label">Cantidad de invitados:</label>
-                        <input type="number" class="form-control" id="cantidadInvitados" required>
-                    </div>
-        
-                    <!-- Duracion del evento -->
-                    <div class="mb-3">
-                        <label for="duracionEvento" class="form-label">Duración del evento (Horas):</label>
-                        <input type="number" class="form-control" id="duracionEvento" required>
-                    </div>
-        
-                    <!-- Ingresar voucher -->
-                    <div class="mb-3">
-                        <label for="voucher" class="form-label">Ingresar voucher:</label>
-                        <input type="text" class="form-control" id="voucher">
-                    </div>
-        
-                    <!-- Botón de enviar -->
-                    <button type="submit" class="btn btn-primary mb-3">Enviar</button>
-                </form>
+    <!-- principal -->
+    <main class="container mb-3 mt-3">
+        <form>
+            <!-- tipo  -->
+            <div class="mb-3">
+                <label for="tipoEvento" class="form-label">Tipo de evento:</label>
+                <select class="form-select" id="tipoEvento" required>
+                    <option value="">Seleccionar</option>
+                    <option value="casamiento">Casamiento</option>
+                    <option value="cumpleanos">Cumpleaños</option>
+                    <option value="otro">Otro</option>
+                </select>
             </div>
-        </div>
-        
+
+            <!-- locacion -->
+            <div class="mb-3">
+                <label for="locacion" class="form-label">Locación:</label>
+                <select class="form-select" id="locacion" required>
+                    <option value="">Seleccionar</option>
+                    <option value="rawson">Rawson</option>
+                    <option value="capital">Capital</option>
+                    <option value="rivadavia">Rivadavia</option>
+                    <option value="pocito">Pocito</option>
+                </select>
+            </div>
+
+            <!--  invitados -->
+            <div class="mb-3">
+                <label for="cantidadInvitados" class="form-label">Cantidad de invitados:</label>
+                <input type="number" class="form-control" id="cantidadInvitados" required>
+            </div>
+
+            <!-- duracion  -->
+            <div class="mb-3">
+                <label for="duracionEvento" class="form-label">Duración del evento (Horas):</label>
+                <input type="number" class="form-control" id="duracionEvento" required>
+            </div>
+
+            <!--  voucher -->
+            <div class="mb-3">
+                <label for="voucher" class="form-label">Ingresar voucher:</label>
+                <input type="text" class="form-control" id="voucher">
+            </div>
+
+            <!--  enviar -->
+            <button type="submit" class="btn btn-enviar mb-3">Enviar</button>
+        </form>
     </main>
 
     <!-- footer -->
     <footer>
         <div class="container">
             <div class="row social-icons">
-                <!-- Sección de Contacto -->
+                <!-- contacto -->
                 <div class="col-md-6">
                     <h4>Contacto</h4>
                     <ul>
@@ -140,7 +143,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- Sección de Redes Sociales -->
+                <!--   redes  -->
                 <div class="col-md-6">
                     <h4>Redes Sociales</h4>
                     <ul class="social-icons">
@@ -155,7 +158,7 @@
                             </a>
                         </li>
                     </ul>
-                    <!-- Formulario de Registro para Novedades -->
+                    <!-- formulario  -->
                     <div class="row">
                         <div class="col-md-12">
                             <h4>Regístrate para recibir novedades</h4>
@@ -168,26 +171,24 @@
                                         aria-label="Tu dirección de correo electrónico"
                                         aria-describedby="button-addon2">
                                     <div class="input-group-append">
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn borde enviar" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop">
-                                            <img src="../multimedia/ico/avion.png" class="redes " alt="">
+                                        <!-- btn  modal -->
+                                        <button type="button" class="btn borde enviar" id="btnEnviar">
+                                            <img src="../multimedia/ico/avion.png" class="redes" alt="">
                                         </button>
-                                        <!-- Modal -->
+                                        <!-- modal -->
                                         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
                                             data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                             aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Gracias
-                                                            por registrarte</h1>
+                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Mensaje
+                                                        </h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
-                                                    <div class="modal-body">
-                                                        Recibirás todas las novedades sobre nuestras promociones.
-                                                        ¡Gracias!
+                                                    <div class="modal-body" id="modalBody">
+                                                        <!-- js -->
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
@@ -217,15 +218,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-    <script>
-        // Manejo del evento de clic para el botón de hamburguesa
-        document.querySelector('.navbar-toggler').addEventListener('click', function () {
-            // Selecciona el elemento que contiene el menú
-            var menu = document.querySelector('#navbarNav');
-            // Alterna la clase 'show' para mostrar u ocultar el menú
-            menu.classList.toggle('show');
-        });
-    </script>
 </body>
 
 </html>
