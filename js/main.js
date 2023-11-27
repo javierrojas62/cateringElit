@@ -1,39 +1,39 @@
 document.getElementById('btnEnviar').addEventListener('click', function () {
-    // Obtener el valor del correo electrónico
+    // obtener campo correo
     var email = document.getElementById('emailInput').value;
 
-    // Validar si el correo está vacío o no
+    // validar corre
     if (email.trim() === '') {
-        // Mostrar modal de correo vacío
+        // modal vacio
         document.getElementById('modalBody').innerHTML = 'Por favor, ingresa tu dirección de correo electrónico.';
     } else {
-        // Validar si el correo tiene un formato válido
+        // modal correcto
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (emailRegex.test(email)) {
-            // Mostrar modal de registro exitoso
+            // exitoso
             document.getElementById('modalBody').innerHTML = 'Gracias por registrarte. Recibirás todas las novedades sobre nuestras promociones.';
 
-            // Limpiar el campo de correo electrónico después de 2 segundos (puedes ajustar el tiempo según tus necesidades)
+            // limpiar campo cada 2 seg
             setTimeout(function () {
                 document.getElementById('emailInput').value = '';
                 location.reload();
             }, 2000);
         } else {
-            // Mostrar modal de correo inválido
+            // modal no valido
             document.getElementById('modalBody').innerHTML = 'Por favor, ingresa una dirección de correo electrónico válida.';
         }
     }
 
-    // Mostrar el modal
+    // mostrar modal
     var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
     myModal.show();
 });
 
 
-   // Manejo del evento de clic para el botón de hamburguesa
+   // menu hamburguesa
    document.querySelector('.navbar-toggler').addEventListener('click', function () {
-    // Selecciona el elemento que contiene el menú
+    // seleccionar menu hamburguesa
     var menu = document.querySelector('#navbarNav');
-    // Alterna la clase 'show' para mostrar u ocultar el menú
+    // ocultar menu
     menu.classList.toggle('show');
 });

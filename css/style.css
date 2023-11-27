@@ -97,9 +97,9 @@ ul {
 
 /* sin subrayado de los enlaces  */
 .social-icons a {
-    
     color: black;
     background-color: var(--principal);
+    text-decoration: none;
 }
 
 .enviar {
@@ -109,10 +109,12 @@ ul {
 .btn-enviar {
     background-color: var(--principal);
 }
-
+#mouse{
+    width: 25px;
+   }
 
 footer {
     background-color: var(--principal);
     padding: 20px;
-
+    
 }
