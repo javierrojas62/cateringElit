@@ -66,6 +66,9 @@ header {
     margin-top: 25px;
     padding: 15px;
 }
+#somos{
+    border-radius: 15px;
+}
 
 /*  iconos footer */
 .redes {
